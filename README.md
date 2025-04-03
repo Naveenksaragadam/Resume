@@ -6,7 +6,7 @@
 A modern, professional resume template built using LaTeX. This repository contains both the source files and compiled PDF version of my resume.
 
 ## Preview
-[![Resume Preview](./pdf/resume-thumbnail.jpg)](./pdf/resume.pdf)  
+[![Resume Preview](./pdf/resume-thumbnail.jpg)](./output/resume.pdf)  
 *Click the image to view PDF*
 
 ## Features
