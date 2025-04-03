@@ -5,7 +5,7 @@
 
 A modern, professional resume template built using LaTeX. This repository contains both the source files and compiled PDF version of my resume.
 
-🔗 **Quick Links**: [👀 Preview](https://github.com/Naveenksaragadam/Resume/edit/main/README.md#preview) • [✨ Features](#features) • [📁 Project Structure](#project-structure) • [🚀 Usage](#usage) • [🎨 Customization](#customization) • [📜 License](#license)
+🔗 **Quick Links**: [👀 Preview](#preview) • [✨ Features](#features) • [📁 Project Structure](#project-structure) • [🚀 Usage](#usage) • [🎨 Customization](#customization) • [📜 License](#license)
 
 
 ## Preview
