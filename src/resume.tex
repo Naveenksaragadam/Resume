@@ -1,0 +1,162 @@
+\documentclass{extarticle}
+\usepackage{extsizes}
+\usepackage[
+  letterpaper,
+  top=0.2in,
+  left=0.3in,
+  right=0.3in,
+  bottom=0.2in
+]{geometry}
+\usepackage{calc} 
+\usepackage{fontawesome5}   % Icons
+\usepackage{enumitem}       % For controlling list spacing
+\usepackage[hidelinks]{hyperref}      % Clickable links
+\usepackage{anyfontsize} 
+\pagenumbering{gobble}
+
+% Custom font size setup
+\makeatletter
+\renewcommand\normalsize{%
+  \@setfontsize\normalsize{10pt}{12pt} % 10pt font, 12pt baselineskip
+  \abovedisplayskip 8pt plus 2pt minus 4pt%
+  \belowdisplayskip \abovedisplayskip
+  \abovedisplayshortskip \z@ plus 2pt%
+  \belowdisplayshortskip 4pt plus 2pt minus 2pt%
+  \let\@listi\@listI}
+\normalsize  
+\makeatother
+
+
+% No paragraph indentation or extra spacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% Itemize list spacing: no vertical gaps, more indentation
+\setlist[itemize]{
+  nosep,          % No extra space between items
+  topsep=0pt,     % No space above/below list
+  partopsep=0pt,
+  parsep=0pt,
+  leftmargin=2em  % Indent bullets from the left margin
+}
+
+% Section heading with minimal vertical space
+\newcommand{\ressection}[1]{%
+  \noindent{\bf \large{#1}}% Title, then pull text up
+  \par\vspace{2pt}
+  \hrule
+  \vspace{0.4em}  % Negative space to eliminate gap after the rule
+}
+
+\newcommand{\minspacing}{%
+  \vspace{7pt}
+}
+
+\begin{document}
+
+%---------------------%
+%       HEADER        %
+%---------------------%
+\begin{center}
+  {\Large \textbf{Naveen Saragadam}}\\[0.2em]   Tucson, Arizona\\[0.2em] \ +1 (520) 535-5599  \textbar \space \href{mailto:naveens@arizona.edu}{naveens@arizona.edu} \textbar \space \href{https://linkedin.com/in/naveen-saragadam}{linkedin.com/in/naveen-saragadam} \textbar \space 
+  \href{https://naveens.infy.uk}{naveens.infy.uk}  
+\end{center}
+
+%---------------------%
+%       Summary       %
+%---------------------%
+\ressection{Summary}
+
+   Data engineer with 2.5+ years of experience building terabyte-scale data pipelines and analytics solutions across retail and automotive industries. Proficient in SQL, Python, PySpark, ETL/ELT processes, and cloud platforms (Azure, Databricks, Snowflake). Demonstrated success in data migration, workflow optimization, and governance implementation with 99\% accuracy. Skilled in transforming business requirements into efficient data solutions that drive measurable outcomes and cost savings
+
+\minspacing
+%---------------------%
+%       SKILLS        %
+%---------------------%
+\ressection{Skills}
+\begin{tabular}{@{}l@{\hspace{0.5em}\hspace{0.5em}}l@{}}
+\textbf{Programming:} & SQL, Python 3.x, PySpark, SparkSQL\\
+\textbf{Data Engineering:} & Data Pipelines, Data Modeling, Data Warehousing, Relational Databases\\
+\textbf{Big Data Tools:} & Apache Spark, Hadoop, Hive, Trino\\
+\textbf{Cloud Technologies:} & Azure Synapse Analytics, Azure Data Lake Storage (ADLS Gen2), Databricks, Snowflake\\
+\textbf{Orchestration:} & Airflow, Azure Data Factory\\
+\textbf{Other Tools:} & Git, GitHub, Docker, Power BI, Tableau
+\end{tabular}
+
+\minspacing
+%---------------------%
+%       Experience    %
+%---------------------%
+\ressection{Work Experience}
+{\fontsize{10.5pt}{12pt}\selectfont\textbf{University of Arizona}} \hfill Sep 2024 -- Jan 2025\\
+\textit{Graduate Teaching Assistant} \hfill Tucson, AZ
+\begin{itemize}
+    \item Reduced environment setup time by \textbf{70}\% by configuring Windows Subsystem for Linux (WSL) for Chipyard environment (RISC-V-based hardware design platform), eliminating compatibility issues for hardware testing
+    \item Enabled successful execution of \textbf{10+} Rocket SoC chip projects by optimizing Chipyard environment setup, allowing \textbf{40+} students to efficiently run and test their code
+\end{itemize}
+
+\vspace{3pt}
+
+{\fontsize{10.5pt}{12pt}\selectfont\textbf{Target}} \hfill Apr 2023 -- Jun 2024\\
+\textit{Data Analyst} \hfill Bangalore, India
+\begin{itemize}
+    \item Accelerated data processing for \textbf{\$7.5B} clearance pricing decisions by migrating and optimizing terabyte-scale legacy Hadoop ETL pipelines to Big Red3 cluster using PySpark/SQL, reducing latency \textbf{30}\% (from \textbf{8} hrs to \textbf{5.5} hrs) for \textbf{1B+} weekly records
+    \item Championed data governance with \textbf{99}\% accuracy while ensuring compliance with Target's data privacy policies through automated validation checks and notifications for data outliers, null-value handling, and data duplication
+    \item Enhanced decision-making capabilities for \textbf{230+} Strategy/Operations users by designing and deploying \textbf{5+} interactive reports within the Clearance Insights dashboard, delivering critical business metrics in an accessible format
+    \item Maintained \textbf{99}\% SLA adherence by providing Tier-2 on-call support to swiftly identify and resolve data discrepancies, ensuring continuous data availability for business operations
+\end{itemize}
+
+\par\vspace{3pt}
+
+{\fontsize{10.5pt}{12pt}\selectfont\textbf{EXL Service (General Motors/ACDelco)}} \hfill Nov 2021 -- Apr 2023\\
+\textit{Business Analyst (Data Engineer Focus) \textbar\hspace{0.1em} Data Engineer} \hfill Bangalore, India
+\begin{itemize}
+    \item Improved data accessibility and decision-making efficiency by designing a pipeline to process and consolidate \textbf{80GB}/week of parts return data from SharePoint (via SharePlum) and GM systems, transforming \textbf{5} fragmented reports into a single source of truth for ACDelco Parts Workflows
+    \item Generated \$\textbf{40M} annual savings through revenue protection and reduced resolution times by implementing decision-tree logic in the ACDelco parts workflow to streamline recovery processes
+    \item Developed web scrapers using Selenium and Beautiful Soup to extract auto parts pricing data from Amazon, O'Reilly, and \textbf{3+} suppliers, enabling real-time competitor benchmarking and data-driven pricing strategy evaluation for General Motors
+\end{itemize}
+
+\minspacing
+%---------------------%
+%   CERTIFICATIONS    %
+%---------------------%
+\ressection{Certifications}
+\begin{tabular}{@{}p{\linewidth}@{}}
+\textbf{Microsoft:} Azure Data Fundamentals (DP-900) \hfill Obtained: Jan 2021\\
+\textbf{Microsoft:} Azure Data Engineer Associate (DP-203)\hfill Obtained: Mar 2025 \textbar\hspace{0.7em}Expires: Apr 2026\\
+\end{tabular}
+
+\par\vspace{5pt}
+
+%---------------------%
+%       Awards        %
+%---------------------%
+\ressection{Awards \& Extracurricular}
+\begin{itemize}
+\item Won First Place in the Target Merchandising Analytics Ideathon for an idea that had an impact of \textbf{\$168M} annually for Target
+\item Key member of "AoA" Club at Target, organizing engaging events for 50+ members that improved interdepartmental collaboration and workplace culture
+\item Spearheaded AI/ML branch activities for the CC Club at Bharath University, managing multiple student projects and organizing technical workshops to drive innovation in Artificial Intelligence and Machine Learning
+\end{itemize}
+
+\par\vspace{5pt}
+
+%---------------------%
+%       Education     %
+%---------------------%
+\ressection{Education}
+{\fontsize{10.5pt}{12pt}\selectfont\textbf{University of Arizona }  \hspace{9.5em} GPA: 3.8} \hfill Expected: May 2025\\
+\textit{Master of Science in Information Science: Machine Learning} \hfill Tucson, AZ
+\par\vspace{3pt}
+{\fontsize{10.5pt}{12pt}\selectfont\textbf{Bharath University}} \hfill Jul 2017 -- May 2021\\
+\textit{Bachelor of Technology in Computer Science \& Engineering} \hfill Chennai, India
+
+\par\vspace{5pt}
+
+%---------------------%
+%  Work Authorization %
+%---------------------%
+\ressection{Work Authorization}
+Authorized to work in the U.S., STEM OPT-eligible \hfill  Earliest OPT start: Jun 2025
+
+\end{document}
+
